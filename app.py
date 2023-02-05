@@ -7,7 +7,7 @@ st.title("Movies Recommendation System")
 
 movies_collection= new_movies['title'].values
 
-movie= st.selectbox('Enter a movie name...',movies_collection)
+movie= st.selectbox('Enter a movie name',movies_collection)
 
 def fetchPoster(movie_id):
   response= requests.get("https://api.themoviedb.org/3/movie/{}?api_key=b41014ccce63dd9505d8d5c6d847d979&language=en-US".format(movie_id))
