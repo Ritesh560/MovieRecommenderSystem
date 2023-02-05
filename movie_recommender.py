@@ -134,6 +134,8 @@ def recommend(movie):
   movie_list = sorted(list(enumerate(distance)), reverse=True, key= lambda x: x[1])[1:6]
 
   return movie_list
+  # for i in movie_list:
+    # print(new_movies.iloc[i[0]]['title'])
 
 # %%
 # recommend('Avatar')
